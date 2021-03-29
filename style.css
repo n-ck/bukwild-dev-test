@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+
+/* General styles */
+
 body {
     font-family: 'HelveticaNeue', 'Open Sans', sans-serif;
     background: url('background.jpg') repeat scroll center;
     color: #fff;
-    min-height: 40rem;
-    margin-bottom: 30rem;
-    clear: both;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -25,9 +27,12 @@ a:hover {
     margin: 0 auto 10rem auto;
 }
 
+/* Header and nav */
+
 header {
     display: flex;
     justify-content: space-between;
+    padding: 0.5rem;
 }
 
 .logo {
@@ -55,7 +60,6 @@ header {
 }
 
 .contact {
-    grid-column: 2;
     margin: 2rem 1rem 0 0;
 }
 
@@ -71,24 +75,26 @@ a.contact-btn:hover {
 }
 
 
+/* Main content */
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 15rem 0;
-    height: 70vh;
+    padding: 0 0 4rem 0;
+    min-height: 40vh;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     letter-spacing: -2.2px;
     margin: 0;
 }
 
 .headline {
     flex-basis: 40%;
+    padding-left: 0.5rem;
 }
 
 .subhead {
@@ -97,13 +103,13 @@ h1 {
 }
 
 .subhead p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.8rem;
 }
 
 
 
-/* Footer / CTA */
+/* Footer & CTA */
 
 footer {
     display: flex;
@@ -117,7 +123,7 @@ footer {
     color: #000;
     max-width: 84rem;
     margin: 0 auto;
-    padding: 4rem 5rem 5rem 5rem;
+    padding: 5rem 5rem 5rem 5rem;
 }
 
 footer a {
@@ -152,7 +158,7 @@ span.arrow-icon {
     width: 20px;
     height: 10px;
     background: url('arrow.png') no-repeat center;
-    margin-left: 2px;
+    margin-left: 0.05rem;
     transition: 0.3s;
 }
 
@@ -164,6 +170,9 @@ span.arrow-icon {
     margin-left: 0.25rem;
 }
 
+
+/* Media queries */
+
 @media only screen and (max-width: 900px) {
 
     .headline,
@@ -171,7 +180,6 @@ span.arrow-icon {
         flex-basis: 100%;
         padding: 0.5rem;
     }
-
 }
 
 @media only screen and (max-width: 1000px) {
@@ -183,6 +191,6 @@ span.arrow-icon {
     .cta-headline,
     .cta-btn {
         flex-basis: 100%;
-        padding: 5px;
+        padding: 0.33rem;
     }
 }
