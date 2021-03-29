@@ -4,7 +4,9 @@ body {
     font-family: 'HelveticaNeue', 'Open Sans', sans-serif;
     background: url('background.jpg') repeat scroll center;
     color: #fff;
-    min-height: 100vh;
+    min-height: 40rem;
+    margin-bottom: 30rem;
+    clear: both;
 }
 
 a {
@@ -20,7 +22,7 @@ a:hover {
 .wrapper {
     width: 100%;
     max-width: 90rem;
-    margin: 0 auto 200px auto;
+    margin: 0 auto 10rem auto;
 }
 
 header {
@@ -41,7 +43,7 @@ header {
 
 .nav ul li {
     line-height: 1.625rem;
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 .nav ul li a {
@@ -54,13 +56,13 @@ header {
 
 .contact {
     grid-column: 2;
-    margin: 30px 10px 0 0;
+    margin: 2rem 1rem 0 0;
 }
 
 a.contact-btn {
     font-weight: 600;
     border: 1px solid #fff;
-    padding: 12px 24px;
+    padding: 1rem 2rem;
 }
 
 a.contact-btn:hover {
@@ -80,7 +82,7 @@ a.contact-btn:hover {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 4rem;
     letter-spacing: -2.2px;
     margin: 0;
 }
@@ -95,8 +97,8 @@ h1 {
 }
 
 .subhead p {
-    font-size: 0.9em;
-    line-height: 1.8em;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
 }
 
 
@@ -113,14 +115,14 @@ footer {
     right: 0;
     background: #fff;
     color: #000;
-    width: 84rem;
+    max-width: 84rem;
     margin: 0 auto;
-    padding: 5% 3% 5% 4%;
+    padding: 4rem 5rem 5rem 5rem;
 }
 
 footer a {
     color: #000;
-    font-size: 0.8em;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     transition: 0.3s;
@@ -136,7 +138,7 @@ footer a:hover {
 
 .cta-headline h3 {
     letter-spacing: -0.63px;
-    font-weight: 2.4em;
+    font-size: 1.6rem;
     margin: 0;
     padding: 0;
 }
@@ -154,16 +156,28 @@ span.arrow-icon {
     transition: 0.3s;
 }
 
-.footer-cta:hover span.arrow-icon {
-    margin-left: 6px;
+.footer-cta {
+    margin-top: 0.5rem;
 }
 
-@media only screen and (max-width: 800px) {
+.footer-cta:hover span.arrow-icon {
+    margin-left: 0.25rem;
+}
+
+@media only screen and (max-width: 900px) {
 
     .headline,
     .subhead {
         flex-basis: 100%;
-        padding: 5px;
+        padding: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    footer {
+        padding: 10% 5%;
     }
 
     .cta-headline,
