@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'HelveticaNeue', 'Open Sans', sans-serif;
+    background: url('background.jpg') repeat scroll center;
+    color: #fff;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffc004
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto 200px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 3em;
+    letter-spacing: -8px;
+    font-weight: 600;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    line-height: 1.625rem;
+    margin: 5px 0;
+}
+
+.nav ul li a {
+    font-weight: 600;
+}
+
+.nav ul li a.active {
+    color: #ffc004;
+}
+
+.contact {
+    grid-column: 2;
+    margin: 30px 10px 0 0;
+}
+
+a.contact-btn {
+    font-weight: 600;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+}
+
+a.contact-btn:hover {
+    color: #ffc004;
+    border-color: #ffc004;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 15rem 0;
+    height: 70vh;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: -2.2px;
+    margin: 0;
+}
+
+.headline {
+    flex-basis: 40%;
+}
+
+.subhead {
+    flex-basis: 35%;
+    padding: 1rem 2rem;
+}
+
+.subhead p {
+    font-size: 0.9em;
+    line-height: 1.8em;
+}
+
+
+
+/* Footer / CTA */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: flex-start;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    color: #000;
+    width: 84rem;
+    margin: 0 auto;
+    padding: 5% 3% 5% 4%;
+}
+
+footer a {
+    color: #000;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffc004
+}
+
+.cta-headline {
+    flex-basis: 60%;
+}
+
+.cta-headline h3 {
+    letter-spacing: -0.63px;
+    font-weight: 2.4em;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-btn {
+    flex-basis: 20%;
+}
+
+span.arrow-icon {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    background: url('arrow.png') no-repeat center;
+    margin-left: 2px;
+    transition: 0.3s;
+}
+
+.footer-cta:hover span.arrow-icon {
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .headline,
+    .subhead {
+        flex-basis: 100%;
+        padding: 5px;
+    }
+
+    .cta-headline,
+    .cta-btn {
+        flex-basis: 100%;
+        padding: 5px;
+    }
+}
